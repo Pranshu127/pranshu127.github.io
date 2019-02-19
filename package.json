@@ -1,5 +1,5 @@
 {
-        "homepage":"https://github.com/Pranshu127/react",
+  "homepage": "http://pranshu127.github.io/react",
   "name": "anthony",
   "version": "0.1.0",
   "private": true,
@@ -7,15 +7,16 @@
     "mdbreact": "^4.10.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "tachyons": "^4.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
