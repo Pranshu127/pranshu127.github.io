@@ -4,9 +4,13 @@ import './App.css';
 import Navbar from './Navbar';
 import Head from './Head';
 import Footer from "./Footer";
-import Card from "./Price";
 import 'tachyons' ;
 import Expt from "./Expt";
+import Card2 from "./Card";
+import Cardlist from "./Cardlist";
+import {robots} from "./robots.js";
+{/*import Card from "./Price"; */}
+
 
 class App extends Component {
   render() {
@@ -14,37 +18,24 @@ class App extends Component {
       <div className="App">
         <Navbar/>
           <Head/>  
-        <h1>my name is anthony</h1>
-            <div className="container-fluid flex">
-                    <div className="outline w-50 pa3 mr2">
-                    <Card />            
-                    </div>
-               <div className="outline w-50 pa3 mr2">
-                    <Card />            
-                    </div>
-               <div className="outline w-50 pa3 mr2">
-                    <Card />            
-                    </div>
-               <div className="outline w-50 pa3 mr2">
-                    <Card />            
-                    </div>                          
+        <h1>my name is anthony gonsalves</h1>
+            <Cardlist robots={robots}/>
+            <div className="container-fluid flex justify-center">
+                <div className="w-25 ma1 pa2 ">
+                    <Card2/>
+                </div>
+                <div className="w-25 ma1 pa2 ">
+                    <Card2/>
+                </div>
+                <div className="w-25 ma1 pa2 ">
+                    <Card2/>
+                </div>
+                <div className="w-25 ma1 pa2 ">
+                    <Card2/>
+                </div>
+                               
             </div>
-            
-             <div className="container-fluid flex">
-                    <div className="outline w-50 pa3 mr2">
-                    <Card />            
-                    </div>
-               <div className="outline w-50 pa3 mr2">
-                    <Card />            
-                    </div>
-               <div className="outline w-50 pa3 mr2">
-                    <Card />            
-                    </div>
-               <div className="outline w-50 pa3 mr2">
-                    <Card />            
-                    </div>                          
-            </div>
-            
+            <Expt/>
         <Footer/>    
       </div>
     );
